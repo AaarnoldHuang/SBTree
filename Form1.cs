@@ -95,7 +95,7 @@ namespace tree
 
         private void count_Click(object sender, EventArgs e)
         {
-            info.Text = "共有" +  Q.getCount().ToString() + "个结点。嗯！" /*+ Q.getHight().ToString()*/;
+            info.Text = "共有" +  Q.getCount().ToString() + "个结点。" /*+ Q.getHight().ToString()*/;
         }
     }
 }
