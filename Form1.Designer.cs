@@ -87,7 +87,7 @@
             // 
             // show
             // 
-            this.show.Location = new System.Drawing.Point(528, 143);
+            this.show.Location = new System.Drawing.Point(532, 157);
             this.show.Name = "show";
             this.show.Size = new System.Drawing.Size(75, 23);
             this.show.TabIndex = 7;
@@ -108,10 +108,10 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(532, 40);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(71, 16);
+            this.radioButton1.Size = new System.Drawing.Size(47, 16);
             this.radioButton1.TabIndex = 11;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "添加孩子";
+            this.radioButton1.Text = "孩子";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
@@ -120,16 +120,16 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(532, 62);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(71, 16);
+            this.radioButton2.Size = new System.Drawing.Size(47, 16);
             this.radioButton2.TabIndex = 12;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "添加兄弟";
+            this.radioButton2.Text = "兄弟";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(528, 100);
+            this.add.Location = new System.Drawing.Point(532, 118);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(75, 23);
             this.add.TabIndex = 13;
@@ -159,7 +159,7 @@
             // 
             // count
             // 
-            this.count.Location = new System.Drawing.Point(528, 182);
+            this.count.Location = new System.Drawing.Point(532, 198);
             this.count.Name = "count";
             this.count.Size = new System.Drawing.Size(75, 23);
             this.count.TabIndex = 19;

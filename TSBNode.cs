@@ -48,6 +48,10 @@ namespace tree
         {
             bp = broNode;
         }
+        public void setNull(TSBNode node)
+        {
+            node = new TSBNode(null, null,null);
+        }
     }
 
 

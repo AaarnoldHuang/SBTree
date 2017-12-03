@@ -8,16 +8,16 @@ namespace tree
 {
     public class TreeClass
     {
-        TSBNode root = null;
-        string mystr = "";
+        TSBNode root = null;        //生成空的root结点
+        string mystr = "";            //空字符串mystr
 
         public TreeClass()
         {
-                                                       //构建树的时候需要吧根节点的值初始化一下
-            root = new TSBNode("", null, null);
+            root = new TSBNode("", null, null);     //构建树的时候需要吧根节点的值初始化一下，
+                                                    //初始化为一个值为“”，孩子兄弟结点均为null的根结点
         }
 
-        public void setRootValue(string x)
+        public void setRootValue(string x)            //设置root结点的值
         {
             root.data = x;
         }
@@ -33,8 +33,7 @@ namespace tree
             TSBNode preSonNode = targetNode.getSonNode();
             if (preSonNode != null)
             {
-                //先见前儿子变成现在儿子的兄弟,然后在添加儿子
-                nowSonNode.setBroNode(preSonNode);
+                nowSonNode.setBroNode(preSonNode);     //先见前孩子变成现在孩子的兄弟,然后再添加孩子
             }
             targetNode.setSonNode(nowSonNode);
             return nowSonNode;
@@ -46,7 +45,7 @@ namespace tree
             TSBNode preBroNode = targetNode.getBroNode();
             if (preBroNode != null)
             {
-                nowBroNode.setBroNode(targetNode.getBroNode());
+                nowBroNode.setBroNode(targetNode.getBroNode());   //先前的兄弟变成现在兄弟的兄弟,然后再添加兄弟
             }
             targetNode.setBroNode(nowBroNode);
             return nowBroNode;
@@ -100,29 +99,6 @@ namespace tree
                 cs = getCount(node.getSonNode());
                 cb = getCount(node.getBroNode());
                 return cs + cb + 1;              //加1是因为根结点没有在统计中
-            }
-        }
-         
-        public int getHight()          //返回树的高度
-        {
-            return getHight(root);
-        }
-        public int getHight(TSBNode node)
-        {
-            int sh, bh;
-            if (node == null)
-            {
-                return 0;
-            }
-            else
-            {
-                sh = getHight(node.getSonNode());
-                bh = getHight(node.getBroNode());
-                if (node.getSonNode() == null && node.getBroNode() != null)
-                {
-                    return bh - 1;
-                }
-                return (sh>bh)? (sh + 1):(bh + 1);
             }
         }
 
