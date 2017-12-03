@@ -9,7 +9,6 @@ namespace tree
     public class TreeClass
     {
         TSBNode root = null;
-        TSBNode nowNode = new TSBNode();
         string mystr = "";
 
         public TreeClass()
@@ -18,12 +17,12 @@ namespace tree
             root = new TSBNode("", null, null);
         }
 
-        public void setRootValve(string x)
+        public void setRootValue(string x)
         {
             root.data = x;
         }
 
-        public TSBNode getRoot()         //返回根结点的值
+        public TSBNode getRoot()         //返回根结点
         {
             return root;
         }

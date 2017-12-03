@@ -75,7 +75,7 @@ namespace tree
                 if (addtext.Text != "")
                 {
                     info.Text = "";
-                    Q.setRootValve(addtext.Text);       //添加Root
+                    Q.setRootValue(addtext.Text);       //添加Root
                 }
                 else
                     info.Text = "输入不能为空，请检查！";
